@@ -1,0 +1,18 @@
+<h1>List of all Comments</h1>
+
+<% @jobs.each do |job| %>
+  <div>
+  	<%= job.id %>
+  	<%= job.url %>
+    <%= job.employer_name %>
+    <%= job.employer_description %>
+    <%= job.job_title %>
+    <%= job.job_description %>
+    <%= job.year_of_experience %>
+    <%= job.education_requirement %>
+    <%= job.industry %>
+    <%= job.base_salary %>
+    <%= job.employment_type_id %>
+    <%= job.created_at %>
+  </div>
+<% end %>
